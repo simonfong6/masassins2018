@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+        var map;
+        var markers = [];
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {lat: 32.880, lng: -117.237},
+                zoom: 15
+            });
+            
+            google.maps.event.addListener(map, 'dblclick', function(event) {
+                placeMarker(event.latLng);
+            });
+        }
+        function placeMarker(location) {
+            var name = prompt("Name:");
+            var marker = containsMarker(name);
+            console.log(marker);
+            if(marker != false){
+                console.log("INDEX");
+                console.log(marker);
+                marker.setPosition(location);
+            }
+            if(marker == false){
+                console.log("FALSE");
+                console.log(marker);
+                addNewMarker(name, location);
+            }
+            
+        }
+        
+        function addNewMarker(name, location){
+            var marker = new google.maps.Marker({
+                position: location, 
+                map: map,
+                label: name
+            });
+            markers.push(marker);
+        }
+        
+        function updateMarker(marker, location){
+            marker.setPosition(location);
+        }
+        
+        function containsMarker(name){
+            var i;
+            for(i = 0; i < markers.length; i++){
+                var label = markers[i].getLabel();
+                if(label == name){
+                    return markers[i];
+                }
+            }
+            return false;
+        }
+        
+        
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6JltnkeQh3hVYnLu1X4HB9yt5mZ8vTrg&callback=initMap"
+    async defer></script>
+  </body>
+</html>
