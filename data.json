@@ -2,22 +2,50 @@
     "markers": [
         {
             "position": {
-                "lat": 32.88474086878943, 
-                "lng": -117.23519325256348
+                "lat": 32.88006921849997, 
+                "lng": -117.24030554294586
             }, 
-            "label": "Simon"
+            "label": "Mirha Monday 10AM-10:50AM Peter 108"
         }, 
         {
             "position": {
-                "lat": 32.886542789586244, 
-                "lng": -117.23257541656494
+                "lat": 32.88696623565638, 
+                "lng": -117.2419698536396
             }, 
-            "label": "Alex"
+            "label": "Mirha Monday 11:00 AM - 11:50AM WFH 1N108"
         }, 
         {
             "position": {
-                "lat": 32.88830863641756, 
-                "lng": -117.235107421875
+                "lat": 32.87831784930235, 
+                "lng": -117.24168285727501
+            }, 
+            "label": "Mirha 2:00 PM- 2:50 PM Monday, HSS2321"
+        }, 
+        {
+            "position": {
+                "lat": 32.87975386197073, 
+                "lng": -117.2358986735344
+            }, 
+            "label": "Mirha Tuesday 2-3:20 PM Governance Chambers"
+        }, 
+        {
+            "position": {
+                "lat": 32.88689415987246, 
+                "lng": -117.24177271127701
+            }, 
+            "label": "Mirha Tuesday 3:30 PM - 4:50PM WFH 1W102"
+        }, 
+        {
+            "position": {
+                "lat": 32.87397250220923, 
+                "lng": -117.24105387926102
+            }, 
+            "label": "Mirha Tuesday 5:00 PM - 6:20 PM GH 242"
+        }, 
+        {
+            "position": {
+                "lat": 32.88697411894169, 
+                "lng": -117.24142670631409
             }, 
             "label": null
         }

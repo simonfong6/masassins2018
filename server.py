@@ -22,6 +22,7 @@ def get_markers():
 @app.route('/markers/update', methods=['GET','POST'])
 def update_markers():
     
+    return "Success"    
     marker = request.json
     
     label = marker['label']
